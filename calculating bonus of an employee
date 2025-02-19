@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int current_year, year_of_joining, no_of_years_served;
+
+    // Input the current financial year and year of joining
+    printf("Enter the current financial year: ");
+    scanf("%d", &current_year);
+    printf("Enter the employee's year of joining: ");
+    scanf("%d", &year_of_joining);
+
+    // Calculate the number of years served
+    no_of_years_served = current_year - year_of_joining;
+
+    // Determine the bonus based on years served
+    if (no_of_years_served > 0 && no_of_years_served < 3) {
+        printf("The current bonus of the employee is 1000 Rs.\n");
+    } else if (no_of_years_served >= 3 && no_of_years_served < 6) {
+        printf("The current bonus of the employee is 2500 Rs.\n");
+    } else if (no_of_years_served >= 6 && no_of_years_served < 10) {
+        printf("The current bonus of the employee is 5000 Rs.\n");
+    } else if (no_of_years_served >= 10) {
+        printf("The current bonus of the employee is 10000 Rs.\n");
+    } else {
+        printf("Invalid input or no bonus applicable.\n");
+    }
+
+    return 0;
+}
