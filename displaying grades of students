@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+
+float subject_1,subject_2,subject_3,subject_4,subject_5,avg;
+printf("enter marks in physics: ");
+scanf("%f",&subject_1);
+printf("enter marks in maths: ");
+scanf("%f",&subject_2);
+printf("enter marks in Chemistry: ");
+scanf("%f",&subject_3);
+printf("enter marks in engineering drawing: ");
+scanf("%f",&subject_4);
+printf("enter marks in C programming: ");
+scanf("%f",&subject_5);
+avg=(subject_1+subject_2+subject_3+subject_4+subject_5)/5;
+printf("the average marks of the student is %f",avg);
+int var =(int)(avg/10);
+switch(var)
+{
+case 10://100
+    printf("Congratulations !!! You have scored A grade\n");
+    break;
+case 9://90-99
+    printf("Congratulations !!! You have scored A grade\n");
+    break;
+
+case 8 ://80-89
+         printf("Very good you have scored B grade\n");
+     break;
+case 7://70-79
+     printf("Can do better. You have scored C grade\n");
+     break;
+case 6://60-69
+     printf("Can do better. You have scored D grade\n");
+     break;
+case 5 ://50-59
+     printf("Can do better. You have scored E grade\n");
+     break;
+
+default://below 50
+     printf("Invalid Input");
+    break;
+}
+return 0 ;
+}
