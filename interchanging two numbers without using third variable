@@ -1,0 +1,13 @@
+/* Two variables a abd b contain values 10 and 20. Wrie a program to interchange
+the contentc of a abd b without using a third variable*/
+
+#include<stdio.h>
+int main()
+{
+    int a=10, b=20;
+    a = a^b;
+    b = a^b;
+    a = a^b;
+    printf("%d\n",a);
+    printf("%d\n",b);
+}
